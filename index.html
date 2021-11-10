@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tugas 7</title>
+    <script>
+      function myDelete() {
+        var result = confirm("Yakin ingin Menghapus?");
+        if (result == true) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function myTambah() {
+        var result = confirm("Yakin Ingin Menambah?");
+        if (result == true) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
   </head>
   <body>
-    <h1>Daftar Mahasiswa Informatika 2020</h1>
+    <h1 align="center">Daftar Mahasiswa Informatika 2020</h1>
 
-    <table border="1" cellpadding="10" cellspacing="0">
-      <tr>
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+      <tr bgcolor="orange">
         <th>No</th>
         <th>Nama</th>
         <th>NIM</th>
@@ -16,64 +35,67 @@
       </tr>
       <tr>
         <td>1</td>
-        <td>Rizki Zakaria A</td>
+        <td>Rizki Zakariaa A</td>
         <td>H1D02001</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td>
+          <input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" />
+          <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" />
+        </td>
       </tr>
       <tr>
         <td>2</td>
         <td>Firman Kurnia Jati</td>
         <td>H1D02002</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>3</td>
         <td>Atika Zahra</td>
         <td>H1D02004</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>4</td>
         <td>Nur Hasna</td>
         <td>H1D02005</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>5</td>
         <td>Zulia Aziz N</td>
         <td>H1D02006</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>6</td>
         <td>Ali Murtado</td>
         <td>H1D02007</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>7</td>
         <td>Azmi Taqiyudin</td>
         <td>H1D02008</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>8</td>
         <td>Regina Khansa M</td>
         <td>H1D02009</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
       <tr>
         <td>9</td>
         <td>Faiz Alana</td>
         <td>H1D020010</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
 
       <tr>
         <td>10</td>
         <td>Susi Susanti</td>
         <td>H1D020010</td>
-        <td><a href="Tambah.php" onclick="return confirm('Yakin Data Akan Ditambah');">Tambah | </a> <a href="hapus.php" onclick="return confirm('Yakin Data Akan Dihapus');">Hapus</a></td>
+        <td><input onclick="return myDelete();" type="submit" name="deleteData" class="btn btn-danger" value="Delete" /> <input onclick="return myTambah();" type="submit" name="tambahData" class="btn btn-danger" value="Tambah" /></td>
       </tr>
     </table>
   </body>
